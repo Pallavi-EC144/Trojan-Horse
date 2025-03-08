@@ -61,7 +61,7 @@ function loadPage(page) {
       htmlContent = `
         <div class="surrogacy">
           <div class="grid">
-            <div class="sub-tab" onclick="loadPage('find-surrogate')">
+            <div class="sub-tab">
               <h3>Find a Surrogate / Intended Parent</h3>
               <p>AI-based matchmaking, profile verification, secure communication.</p>
             </div>
@@ -93,14 +93,13 @@ function loadPage(page) {
         </div>
       `;
       break;
-    case 'legal-support':
+    case 'pregnancy':
       htmlContent = `
-        <div class="legal-support">
+        <div class="pregnancy">
           <div class="grid">
-            <div class="sub-tab">
-              <h3>Legal Navigator Dashboard</h3>
-              <p>Provides a step-by-step legal process guide for surrogacy based on the user’s location.</p>
+            <div class="sub-tab" onclick="loadPage('ongoing-pregnancy')">
+              <h3>Ongoing Pregnancy</h3>
+              <p>Tracking health, doctor consultations, medical alerts.</p>
             </div>
-            <div class="sub-tab">
-              <h3>Contract Builder & Legal Templates</h3>
-              <p>Auto-generates customizable surrogacy agreements covering compensation, medical responsibilities
+            <div class="sub-tab" onclick="loadPage('post-birth-care')">
+              <h3>Post-Birth Child & Mom Care</h
