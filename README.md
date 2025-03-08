@@ -1,4 +1,3 @@
-# Trojan-Horse
 # SurroCare
 
 Welcome to SurroCare, a trusted platform for surrogacy, fertility support, and women’s health. Our mission is to empower women and provide personalized guidance, health tracking, and emotional support to ensure a safe and fulfilling experience for all parties involved.
