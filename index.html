@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,38 +5,178 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SurroCare: Your Surrogacy Journey Starts Here</title>
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #FFFFFF 0%, #F3E9DC 100%);
+      margin: 0;
+      padding: 0;
+      color: #333333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #5E548E;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #2c3e50;
+      font-style: italic;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5E548E;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #5E548E;
+      color: #fff;
+    }
+
+    .about {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      color: #2c3e50;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons a {
+      background-color: #FB6F92;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #FF1493;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      margin-top: 50px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer .quick-links,
+    footer .social-media,
+    footer .contact-info {
+      margin: 20px 0;
+    }
+
+    footer .quick-links a,
+    footer .social-media a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #5E548E;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    footer .quick-links a:hover,
+    footer .social-media a:hover {
+      color: #333333;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
     <header>
-      <img src="{% static 'images/logo.jpg' %}" alt="SurroCare Logo">
-      <div class="header-text">
-        <h1>SurroCare</h1>
-        <p>"Empowering Women, One Connection at a Time."</p>
-        <div class="search-bar">
-          <input type="text" placeholder="Search for services, doctors, or resources...">
-        </div>
+      <h1>SurroCare</h1>
+      <p>"Empowering Women, One Connection at a Time."</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for services, doctors, or resources...">
       </div>
-      <a href="#" class="login-button" id="login-button">Log In</a>
     </header>
 
     <nav>
-      <a href="#" onclick="loadPage('home')">Home</a>
-      <a href="#" onclick="loadPage('surrogacy')">Surrogacy</a>
-      <a href="#" onclick="loadPage('pregnancy')">Pregnancy</a>
-      <a href="#" onclick="loadPage('new-mothers')">New Mothers & Domestic Help</a>
-      <a href="#" onclick="loadPage('menopause')">Menopause</a>
-      <a href="#" onclick="loadPage('legal-support')">Legal Support</a>
-      <a href="#" onclick="loadPage('adoption')">Adoption</a>
-      <a href="#" onclick="loadPage('beyond-surrogacy')">Beyond Surrogacy</a>
-      <a href="#" onclick="loadPage('emotional-support')">Emotional & Community Support</a>
+      <a href="#">Home</a>
+      <a href="#">Surrogacy</a>
+      <a href="#">Pregnancy</a>
+      <a href="#">New Mothers & Domestic Help</a>
+      <a href="#">Menopause</a>
+      <a href="#">Legal Support</a>
+      <a href="#">Adoption</a>
+      <a href="#">Beyond Surrogacy</a>
+      <a href="#">Emotional & Community Support</a>
     </nav>
 
     <div id="content">
-      <!-- Default home page content -->
       <section class="about">
         <p>SurroCare is dedicated to supporting women through their surrogacy and fertility journeys. We provide personalized guidance, health tracking, and emotional support to ensure a safe and fulfilling experience for all parties involved.</p>
         <p>85% of intended parents struggle to find a trusted surrogate. We’re changing that.</p>
@@ -48,50 +186,13 @@
         <h2>Empowering Women, One Connection at a Time.</h2>
         <p>A trusted platform for surrogacy, fertility support, and women’s health.</p>
         <div class="cta-buttons">
-          <a href="#" class="cta-button">Find a Surrogate</a>
-          <a href="#" class="cta-button">Become a Surrogate</a>
-          <a href="#" class="cta-button">Learn More</a>
+          <a href="#">Find a Surrogate</a>
+          <a href="#">Become a Surrogate</a>
+          <a href="#">Learn More</a>
         </div>
-      </section>
-
-      <section class="core-features">
-        <h2>Why Choose Us?</h2>
-        <div class="feature">
-          <p>Safe & Verified Matchmaking</p>
-        </div>
-        <div class="feature">
-          <p>Legal & Financial Guidance</p>
-        </div>
-        <div class="feature">
-          <p>Health & Wellness Tracking</p>
-        </div>
-        <div class="feature">
-          <p>Emotional Support & Counseling</p>
-        </div>
-        <div class="feature">
-          <p>Fertility Resources & Postpartum Care</p>
-        </div>
-      </section>
-
-      <section class="testimonials">
-        <h2>What Our Users Say</h2>
-        <div class="testimonial">
-          <p>"SurroCare made my surrogacy journey so much easier. The support and guidance I received were invaluable."</p>
-          <h4>- Priya Sharma, Surrogate Mother</h4>
-        </div>
-        <div class="testimonial">
-          <p>"Finding a surrogate felt overwhelming until we discovered SurroCare. They connected us with a wonderful surrogate and provided all the support we needed."</p>
-          <h4>- Ankur and Neha Mehta, Intended Parents</h4>
-        </div>
-      </section>
-
-      <section class="cta-section">
-        <h2>Ready to Start Your Journey?</h2>
-        <a href="#" class="cta-button">Sign Up Now</a>
       </section>
     </div>
 
-    <!-- Footer -->
     <footer>
       <div class="quick-links">
         <a href="#">Home</a>
@@ -111,8 +212,6 @@
       <p>Made with ❤️ by <strong>SurroCare</strong> in partnership with <strong>BloomLife</strong></p>
     </footer>
   </div>
-
-  <script src="{% static 'js/script.js' %}"></script>
 </body>
 
-</html>
+</html> 
