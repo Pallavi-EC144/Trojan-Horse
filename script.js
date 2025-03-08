@@ -57,46 +57,6 @@ function loadPage(page) {
         </section>
       `;
       break;
-    case 'legal-support':
-      htmlContent = `
-        <div class="legal-support">
-          <div class="grid">
-            <div class="sub-tab">
-              <h3>Legal Navigator Dashboard</h3>
-              <p>Provides a step-by-step legal process guide for surrogacy based on the user’s location.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Contract Builder & Legal Templates</h3>
-              <p>Auto-generates customizable surrogacy agreements covering compensation, medical responsibilities, parental rights, and ethical guidelines.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Lawyer & Legal Consultant Directory</h3>
-              <p>Connects users with verified lawyers specializing in surrogacy, adoption, and fertility laws.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Legal Document Vault</h3>
-              <p>Secure storage for important documents like contracts, medical reports, and consent forms.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Case Status Tracker</h3>
-              <p>Helps users track the progress of their legal agreements and applications.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>AI-Powered Legal Chatbot</h3>
-              <p>Answers common legal queries about surrogacy laws, rights, and obligations.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Financial & Insurance Guidance</h3>
-              <p>Provides details on insurance coverage for surrogacy-related expenses.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Dispute Resolution & Mediation Support</h3>
-              <p>Offers a neutral mediation service for disputes between surrogates and intended parents.</p>
-            </div>
-          </div>
-        </div>
-      `;
-      break;
     case 'surrogacy':
       htmlContent = `
         <div class="surrogacy">
@@ -140,4 +100,6 @@ function loadPage(page) {
 }
 
 function search() {
- 
+  const searchInput = document.getElementById('search-input').value;
+  alert(`Searching for: ${searchInput}`);
+}
