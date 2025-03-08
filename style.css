@@ -20,6 +20,10 @@ header {
   position: relative;
 }
 
+.logo-container {
+  flex-shrink: 0;
+}
+
 header img {
   width: 250px;
   height: auto;
