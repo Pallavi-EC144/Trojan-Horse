@@ -93,8 +93,10 @@ function loadPage(page) {
         </div>
       `;
       break;
-    case 'find-surrogate':
+    case 'pregnancy':
       htmlContent = `
-        <div class="surrogacy-journey">
-          <h2>Surrogacy: A Journey of Hope and Possibility</h2>
-          <p>Becoming a surrogate is a generous choice, but it comes with challenges
+        <div class="pregnancy">
+          <div class="grid">
+            <div class="sub-tab" onclick="loadPage('ongoing-pregnancy')">
+              <h3>Ongoing Pregnancy</h3>
+              <p>Tracking health, doctor consultations, medical alerts.</
