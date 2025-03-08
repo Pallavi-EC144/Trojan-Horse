@@ -21,7 +21,7 @@ header {
 }
 
 header img {
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 
@@ -247,20 +247,23 @@ footer .social-media a:hover {
 }
 
 .legal-support,
-.surrogacy {
+.surrogacy,
+.pregnancy {
   text-align: left;
   margin: 50px 0;
 }
 
 .legal-support .grid,
-.surrogacy .grid {
+.surrogacy .grid,
+.pregnancy .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
 .legal-support .sub-tab,
-.surrogacy .sub-tab {
+.surrogacy .sub-tab,
+.pregnancy .sub-tab {
   background: #F3E9DC;
   padding: 20px;
   border-radius: 10px;
@@ -269,7 +272,8 @@ footer .social-media a:hover {
 }
 
 .legal-support .sub-tab h3,
-.surrogacy .sub-tab h3 {
+.surrogacy .sub-tab h3,
+.pregnancy .sub-tab h3 {
   font-size: 20px;
   color: #5E548E;
   margin-bottom: 10px;
@@ -277,7 +281,8 @@ footer .social-media a:hover {
 }
 
 .legal-support .sub-tab p,
-.surrogacy .sub-tab p {
+.surrogacy .sub-tab p,
+.pregnancy .sub-tab p {
   font-size: 14px;
   color: #555;
 }
