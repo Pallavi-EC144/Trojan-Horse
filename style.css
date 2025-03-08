@@ -142,8 +142,8 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-.hero .cta-button {
-  background-color: #CBAACB;
+.hero .cta-buttons a {
+  background-color: #FB6F92;
   color: #fff;
   padding: 15px 30px;
   border-radius: 25px;
@@ -152,8 +152,8 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
-.hero .cta-button:hover {
-  background-color: #5E548E;
+.hero .cta-buttons a:hover {
+  background-color: #FF1493;
 }
 
 .core-features {
