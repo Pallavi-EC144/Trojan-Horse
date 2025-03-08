@@ -127,4 +127,4 @@ function loadPage(page) {
             </div>
             <div class="sub-tab">
               <h3>Dispute Resolution & Mediation Support</h3>
-              <p>Offers a neutral mediation service
+              <p>Offers a neutral mediation service for disputes between
