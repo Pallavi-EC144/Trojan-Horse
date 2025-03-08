@@ -61,7 +61,7 @@ function loadPage(page) {
       htmlContent = `
         <div class="surrogacy">
           <div class="grid">
-            <div class="sub-tab" onclick="loadPage('find-surrogate')">
+            <div class="sub-tab">
               <h3>Find a Surrogate / Intended Parent</h3>
               <p>AI-based matchmaking, profile verification, secure communication.</p>
             </div>
@@ -93,9 +93,37 @@ function loadPage(page) {
         </div>
       `;
       break;
-    case 'find-surrogate':
+    case 'legal-support':
       htmlContent = `
-        <div class="surrogacy-journey">
-          <h2>Surrogacy: A Journey of Hope and Possibility</h2>
-          <p>Becoming a surrogate is a generous choice, but it comes with challenges like medical care, emotional strain, and legal uncertainties. Without proper support, surrogates may feel undervalued or unprotected.</p>
-          <p>💙 How SurroCare Helps: We ensure health tracking, legal protection, financial planning, and emotional support, making
+        <div class="legal-support">
+          <div class="grid">
+            <div class="sub-tab">
+              <h3>Legal Navigator Dashboard</h3>
+              <p>Provides a step-by-step legal process guide for surrogacy based on the user’s location.</p>
+            </div>
+            <div class="sub-tab">
+              <h3>Contract Builder & Legal Templates</h3>
+              <p>Auto-generates customizable surrogacy agreements covering compensation, medical responsibilities, parental rights, and ethical guidelines.</p>
+            </div>
+            <div class="sub-tab">
+              <h3>Lawyer & Legal Consultant Directory</h3>
+              <p>Connects users with verified lawyers specializing in surrogacy, adoption, and fertility laws.</p>
+            </div>
+            <div class="sub-tab">
+              <h3>Legal Document Vault</h3>
+              <p>Secure storage for important documents like contracts, medical reports, and consent forms.</p>
+            </div>
+            <div class="sub-tab">
+              <h3>Case Status Tracker</h3>
+              <p>Helps users track the progress of their legal agreements and applications.</p>
+            </div>
+            <div class="sub-tab">
+              <h3>AI-Powered Legal Chatbot</h3>
+              <p>Answers common legal queries about surrogacy laws, rights, and obligations.</p>
+            </div>
+            <div class="sub-tab">
+              <h3>Financial & Insurance Guidance</h3>
+              <p>Provides details on insurance coverage for surrogacy-related expenses.</p>
+            </div>
+            <div class="sub-tab">
+              <h3>Dispute Resolution
