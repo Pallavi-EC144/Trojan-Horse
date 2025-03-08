@@ -61,105 +61,33 @@ function loadPage(page) {
       htmlContent = `
         <div class="surrogacy">
           <div class="grid">
-            <div class="sub-tab">
+            <div class="sub-tab" onclick="loadPage('find-surrogate')">
               <h3>Find a Surrogate / Intended Parent</h3>
               <p>AI-based matchmaking, profile verification, secure communication.</p>
             </div>
-            <div class="sub-tab">
+            <div class="sub-tab" onclick="loadPage('surrogacy-process-guide')">
               <h3>Surrogacy Process Guide</h3>
               <p>Step-by-step journey, eligibility check, legal and ethical guidelines.</p>
             </div>
-            <div class="sub-tab">
+            <div class="sub-tab" onclick="loadPage('health-medical-support')">
               <h3>Health & Medical Support</h3>
               <p>Medical pre-screening, pregnancy health tracker, doctor consultations.</p>
             </div>
-            <div class="sub-tab">
+            <div class="sub-tab" onclick="loadPage('legal-contractual-agreements')">
               <h3>Legal & Contractual Agreements</h3>
               <p>Contract generator, legal document vault, lawyer consultations, dispute resolution.</p>
             </div>
-            <div class="sub-tab">
+            <div class="sub-tab" onclick="loadPage('financial-planning')">
               <h3>Financial Planning & Cost Estimator</h3>
               <p>Surrogacy cost breakdown, insurance options, funding assistance.</p>
             </div>
-            <div class="sub-tab">
+            <div class="sub-tab" onclick="loadPage('post-surrogacy-support')">
               <h3>Post-Surrogacy Support</h3>
               <p>Postpartum care, emotional counseling, childcare guidance, surrogate recovery.</p>
             </div>
-            <div class="sub-tab">
+            <div class="sub-tab" onclick="loadPage('request-legal-review')">
               <h3>Request Legal Review</h3>
               <p>Review legal documents before finalizing matches.</p>
-            </div>
-          </div>
-        </div>
-      `;
-      break;
-    case 'pregnancy':
-      htmlContent = `
-        <div class="pregnancy">
-          <div class="grid">
-            <div class="sub-tab" onclick="loadPage('ongoing-pregnancy')">
-              <h3>Ongoing Pregnancy</h3>
-              <p>Tracking health, doctor consultations, medical alerts.</p>
-            </div>
-            <div class="sub-tab" onclick="loadPage('post-birth-care')">
-              <h3>Post-Birth Child & Mom Care</h3>
-              <p>Baby care, lactation support, mother’s recovery.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Postpartum</h3>
-              <p>Mental & physical health, emotional counseling, fitness recovery.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Medical Records & Reports</h3>
-              <p>Stores pregnancy-related test results, prescriptions, and doctor notes.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Emergency Support & Helpline</h3>
-              <p>Quick access to medical help, crisis counseling, and 24/7 support.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Community & Support Groups</h3>
-              <p>Forums where surrogates and mothers can share experiences and seek advice.</p>
-            </div>
-          </div>
-        </div>
-      `;
-      break;
-    case 'legal-support':
-      htmlContent = `
-        <div class="legal-support">
-          <div class="grid">
-            <div class="sub-tab">
-              <h3>Legal Navigator Dashboard</h3>
-              <p>Provides a step-by-step legal process guide for surrogacy based on the user’s location.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Contract Builder & Legal Templates</h3>
-              <p>Auto-generates customizable surrogacy agreements covering compensation, medical responsibilities, parental rights, and ethical guidelines.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Lawyer & Legal Consultant Directory</h3>
-              <p>Connects users with verified lawyers specializing in surrogacy, adoption, and fertility laws.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Legal Document Vault</h3>
-              <p>Secure storage for important documents like contracts, medical reports, and consent forms.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Case Status Tracker</h3>
-              <p>Helps users track the progress of their legal agreements and applications.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>AI-Powered Legal Chatbot</h3>
-              <p>Answers common legal queries about surrogacy laws, rights, and obligations.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Financial & Insurance Guidance</h3>
-              <p>Provides details on insurance coverage for surrogacy-related expenses.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Dispute Resolution</h3>
-              <p>Helps resolve disputes that may arise during the surrogacy process.</p>
             </div>
           </div>
         </div>
@@ -168,43 +96,5 @@ function loadPage(page) {
     case 'find-surrogate':
       htmlContent = `
         <div class="surrogacy-journey">
-          <h2>Find a Surrogate / Intended Parent</h2>
-          <div class="grid">
-            <div class="sub-tab">
-              <h3>AI-based Matchmaking</h3>
-              <p>Profile verification, secure communication.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Surrogacy Process Guide</h3>
-              <p>Step-by-step journey, eligibility check, legal and ethical guidelines.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Health & Medical Support</h3>
-              <p>Medical pre-screening, pregnancy health tracker, doctor consultations.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Legal & Contractual Agreements</h3>
-              <p>Contract generator, legal document vault, lawyer consultations, dispute resolution.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Financial Planning & Cost Estimator</h3>
-              <p>Surrogacy cost breakdown, insurance options, funding assistance.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Post-Surrogacy Support</h3>
-              <p>Postpartum care, emotional counseling, childcare guidance, surrogate recovery.</p>
-            </div>
-            <div class="sub-tab">
-              <h3>Request Legal Review</h3>
-              <p>Review legal documents before finalizing matches.</p>
-            </div>
-          </div>
-        </div>
-      `;
-      break;
-    default:
-      htmlContent = '<p>Page not found.</p>';
-  }
-
-  contentDiv.innerHTML = htmlContent;
-}
+          <h2>Surrogacy: A Journey of Hope and Possibility</h2>
+          <p>Becoming a surrogate is a generous choice, but it comes with challenges
