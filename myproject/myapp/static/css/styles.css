@@ -224,4 +224,50 @@ footer .social-media a {
   text-decoration: none;
   color: #5E548E;
   font-weight: 600;
-  transition:
+  transition: color 0.3s ease;
+}
+
+footer .quick-links a:hover,
+footer .social-media a:hover {
+  color: #333333;
+}
+
+.legal-support,
+.surrogacy,
+.pregnancy {
+  text-align: left;
+  margin: 50px 0;
+}
+
+.legal-support .grid,
+.surrogacy .grid,
+.pregnancy .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.legal-support .sub-tab,
+.surrogacy .sub-tab,
+.pregnancy .sub-tab {
+  background: #F3E9DC;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.legal-support .sub-tab h3,
+.surrogacy .sub-tab h3,
+.pregnancy .sub-tab h3 {
+  font-size: 20px;
+  color: #5E548E;
+  margin-bottom: 10px;
+}
+
+.legal-support .sub-tab p,
+.surrogacy .sub-tab p,
+.pregnancy .sub-tab p {
+  font-size: 14px;
+  color: #555;
+}
