@@ -126,5 +126,4 @@ function loadPage(page) {
               <p>Provides details on insurance coverage for surrogacy-related expenses.</p>
             </div>
             <div class="sub-tab">
-              <h3>Dispute Resolution & Mediation Support</h3>
-              <p>Offers a neutral mediation service for disputes between surrogates and intended parents.</p>
+              <h3>Dispute Resolution
