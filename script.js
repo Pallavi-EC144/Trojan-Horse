@@ -99,4 +99,4 @@ function loadPage(page) {
           <div class="grid">
             <div class="sub-tab" onclick="loadPage('ongoing-pregnancy')">
               <h3>Ongoing Pregnancy</h3>
-              <p>Tracking health, doctor consultations, medical alerts.</
+              <p>
