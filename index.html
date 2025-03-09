@@ -7,6 +7,7 @@
   <title>SurroCare: Your Surrogacy Journey Starts Here</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
   <style>
+    /* Your existing CSS styles */
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #FFFFFF 0%, #F3E9DC 100%);
@@ -22,8 +23,23 @@
     }
 
     header {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 20px 0;
+      position: relative;
+    }
+
+    header img {
+      width: 150px;
+      height: auto;
+      position: absolute;
+      left: 20px;
+    }
+
+    .header-text {
+      text-align: center;
+      flex-grow: 1;
     }
 
     header h1 {
@@ -63,15 +79,15 @@
     nav a {
       text-decoration: none;
       color: #fff;
-      background-color: #5E548E;
-      padding: 10px 20px;
+      background-color: #967bb6;
+      padding: 15px 30px;
       border-radius: 25px;
       font-weight: 600;
       transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #333333;
+      background-color: #7b5f95;
     }
 
     .about {
@@ -105,7 +121,7 @@
     }
 
     .cta-buttons a {
-      background-color: #CBAACB;
+      background-color: #FB6F92;
       color: #fff;
       padding: 15px 30px;
       border-radius: 25px;
@@ -115,7 +131,58 @@
     }
 
     .cta-buttons a:hover {
-      background-color: #5E548E;
+      background-color: #FF1493;
+    }
+
+    .surrogacy-content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .surrogacy-content .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .surrogacy-content .tabs a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #967bb6;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .surrogacy-content .tabs a:hover {
+      background-color: #7b5f95;
+    }
+
+    .surrogacy-content .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .surrogacy-content .grid .section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .surrogacy-content .grid .section h2 {
+      font-size: 24px;
+      color: #5E548E;
+      margin-bottom: 10px;
+    }
+
+    .surrogacy-content .grid .section p {
+      font-size: 16px;
+      color: #555;
     }
 
     footer {
@@ -151,32 +218,117 @@
     footer .social-media a:hover {
       color: #333333;
     }
+
+    /* Matchmaking Styles */
+    .matchmaking-container {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .profile {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f0f0f0;
+    }
+
+    .match-result {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    /* Cost Calculator Styles */
+    .cost-calculator {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cost-calculator label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 600;
+      color: #5E548E;
+    }
+
+    .cost-calculator input,
+    .cost-calculator select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .cost-calculator button {
+      background-color: #FB6F92;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cost-calculator button:hover {
+      background-color: #FF1493;
+    }
+
+    .cost-calculator #result {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    }
+
+    .cost-calculator #result h3 {
+      color: #5E548E;
+    }
+
+    .cost-calculator #result ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cost-calculator #result ul li {
+      margin: 10px 0;
+      color: #555;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <header>
-      <h1>SurroCare</h1>
-      <p>"Empowering Women, One Connection at a Time."</p>
-      <div class="search-bar">
-        <input type="text" placeholder="Search for services, doctors, or resources...">
+      <img src="C:\Users\sudha\projects\surrocare_project\logo.jpg" alt="SurroCare Logo">
+      <div class="header-text">
+        <h1>SurroCare</h1>
+        <p>"Empowering Women, One Connection at a Time."</p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for services, doctors, or resources...">
+        </div>
       </div>
     </header>
 
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Surrogacy</a>
-      <a href="#">Pregnancy</a>
-      <a href="#">New Mothers & Domestic Help</a>
-      <a href="#">Menopause</a>
-      <a href="#">Legal Support</a>
-      <a href="#">Adoption</a>
-      <a href="#">Beyond Surrogacy</a>
-      <a href="#">Emotional & Community Support</a>
+      <a href="#" onclick="loadPage('home')">Home</a>
+      <a href="#" onclick="loadPage('surrogacy')">Surrogacy</a>
+      <a href="#" onclick="loadPage('beyond-surrogacy')">Beyond Surrogacy</a>
+      <a href="#" onclick="loadPage('feminine-health')">Feminine Health</a>
     </nav>
 
     <div id="content">
+      <!-- Default home page content -->
       <section class="about">
         <p>SurroCare is dedicated to supporting women through their surrogacy and fertility journeys. We provide personalized guidance, health tracking, and emotional support to ensure a safe and fulfilling experience for all parties involved.</p>
         <p>85% of intended parents struggle to find a trusted surrogate. We’re changing that.</p>
@@ -212,6 +364,345 @@
       <p>Made with ❤️ by <strong>SurroCare</strong> in partnership with <strong>BloomLife</strong></p>
     </footer>
   </div>
+
+  <script>
+    function loadPage(page) {
+      const contentDiv = document.getElementById('content');
+      let htmlContent = '';
+
+      switch (page) {
+        case 'home':
+          htmlContent = `
+            <section class="about">
+              <p>SurroCare is dedicated to supporting women through their surrogacy and fertility journeys. We provide personalized guidance, health tracking, and emotional support to ensure a safe and fulfilling experience for all parties involved.</p>
+              <p>85% of intended parents struggle to find a trusted surrogate. We’re changing that.</p>
+            </section>
+
+            <section class="hero">
+              <h2>Empowering Women, One Connection at a Time.</h2>
+              <p>A trusted platform for surrogacy, fertility support, and women’s health.</p>
+              <div class="cta-buttons">
+                <a href="#">Find a Surrogate</a>
+                <a href="#">Become a Surrogate</a>
+                <a href="#">Learn More</a>
+              </div>
+            </section>
+          `;
+          break;
+        case 'surrogacy':
+          htmlContent = `
+            <div class="surrogacy-content">
+              <div class="tabs">
+                <a href="#" onclick="loadPage('cost-calculator')">Surrogacy Cost Calculator</a>
+                <a href="#" onclick="loadPage('matchmaking')">Find a Surrogate</a>
+                <a href="#" onclick="loadPage('pregnancy')">Pregnancy</a>
+                <a href="#" onclick="loadPage('new-mothers')">New Mothers & Domestic Help</a>
+              </div>
+
+              <div class="grid">
+                <div class="section" onclick="loadPage('matchmaking')">
+                  <h2>Find a Surrogate / Intended Parent</h2>
+                  <p>AI-based matchmaking, profile verification, secure communication.</p>
+                </div>
+                <div class="section">
+                  <h2>Legal & Contractual Agreements</h2>
+                  <p>Contract generator, legal document vault, lawyer consultations, dispute resolution.</p>
+                </div>
+                <div class="section">
+                  <h2>Request Legal Review</h2>
+                  <p>Review legal documents before finalizing matches.</p>
+                </div>
+                <div class="section">
+                  <h2>Surrogacy Process Guide</h2>
+                  <p>Step-by-step journey, eligibility check, legal and ethical guidelines.</p>
+                </div>
+                <div class="section">
+                  <h2>Financial Planning & Cost Estimator</h2>
+                  <p>Surrogacy cost breakdown, insurance options, funding assistance.</p>
+                </div>
+                <div class="section">
+                  <h2>Health & Medical Support</h2>
+                  <p>Medical pre-screening, pregnancy health tracker, doctor consultations.</p>
+                </div>
+              </div>
+            </div>
+          `;
+          break;
+        case 'cost-calculator':
+          htmlContent = `
+            <div class="cost-calculator">
+              <h2>Surrogacy Cost Calculator</h2>
+              <form id="costCalculatorForm">
+                <label for="location">Location:</label>
+                <select id="location" name="location">
+                  <option value="delhi">Delhi</option>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="bangalore">Bangalore</option>
+                  <option value="chennai">Chennai</option>
+                  <option value="hyderabad">Hyderabad</option>
+                  <option value="kolkata">Kolkata</option>
+                </select>
+
+                <label for="surrogacyType">Type of Surrogacy:</label>
+                <select id="surrogacyType" name="surrogacyType">
+                  <option value="gestational">Gestational</option>
+                  <option value="traditional">Traditional</option>
+                </select>
+
+                <label for="agencyFees">Using an Agency?</label>
+                <select id="agencyFees" name="agencyFees">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+
+                <label for="surrogateCompensation">Surrogate Compensation (₹):</label>
+                <input type="number" id="surrogateCompensation" name="surrogateCompensation" placeholder="e.g., 40000">
+
+                <label for="ivfCosts">IVF Costs (₹):</label>
+                <input type="number" id="ivfCosts" name="ivfCosts" placeholder="e.g., 15000">
+
+                <label for="legalFees">Legal Fees (₹):</label>
+                <input type="number" id="legalFees" name="legalFees" placeholder="e.g., 10000">
+
+                <label for="insurance">Insurance Costs (₹):</label>
+                <input type="number" id="insurance" name="insurance" placeholder="e.g., 5000">
+
+                <label for="travel">Travel and Accommodation (₹):</label>
+                <input type="number" id="travel" name="travel" placeholder="e.g., 3000">
+
+                <button type="button" onclick="calculateCost()">Calculate</button>
+              </form>
+
+              <div id="result">
+                <h3>Estimated Total Cost: <span id="totalCost">₹0</span></h3>
+                <h4>Breakdown:</h4>
+                <ul>
+                  <li>Medical Expenses: <span id="medicalCost">₹0</span></li>
+                  <li>Surrogate Compensation: <span id="compensationCost">₹0</span></li>
+                  <li>Legal Fees: <span id="legalCost">₹0</span></li>
+                  <li>Insurance: <span id="insuranceCost">₹0</span></li>
+                  <li>Travel and Accommodation: <span id="travelCost">₹0</span></li>
+                </ul>
+              </div>
+            </div>
+          `;
+          break;
+        case 'matchmaking':
+          htmlContent = `
+            <div class="matchmaking-container">
+              <h2>Find a Surrogate Mother</h2>
+              <div class="profile">
+                <h3>Add Surrogate</h3>
+                <form id="addSurrogateForm">
+                  <label for="surrogateName">Name:</label>
+                  <input type="text" id="surrogateName" name="surrogateName" placeholder="Enter name">
+
+                  <label for="surrogateLocation">Location:</label>
+                  <input type="text" id="surrogateLocation" name="surrogateLocation" placeholder="Enter location">
+
+                  <label for="surrogateAge">Age:</label>
+                  <input type="number" id="surrogateAge" name="surrogateAge" placeholder="Enter age">
+
+                  <label for="surrogateChildren">Number of Children:</label>
+                  <input type="number" id="surrogateChildren" name="surrogateChildren" placeholder="Enter number of children">
+
+                  <label for="surrogateMedicalHistory">Medical History:</label>
+                  <textarea id="surrogateMedicalHistory" name="surrogateMedicalHistory" placeholder="Enter medical history"></textarea>
+
+                  <label for="surrogatePreferences">Preferences:</label>
+                  <textarea id="surrogatePreferences" name="surrogatePreferences" placeholder="Enter preferences"></textarea>
+
+                  <button type="button" onclick="addSurrogate()">Add Surrogate</button>
+                </form>
+              </div>
+
+              <div class="profile">
+                <h3>Add Intended Parents</h3>
+                <form id="addParentsForm">
+                  <label for="parentsName">Name:</label>
+                  <input type="text" id="parentsName" name="parentsName" placeholder="Enter name">
+
+                  <label for="parentsLocation">Location:</label>
+                  <input type="text" id="parentsLocation" name="parentsLocation" placeholder="Enter location">
+
+                  <label for="parentsAgeRange">Age Range:</label>
+                  <input type="text" id="parentsAgeRange" name="parentsAgeRange" placeholder="Enter age range (e.g., 25-35)">
+
+                  <label for="parentsMedicalHistory">Medical History:</label>
+                  <textarea id="parentsMedicalHistory" name="parentsMedicalHistory" placeholder="Enter medical history"></textarea>
+
+                  <label for="parentsPreferences">Preferences:</label>
+                  <textarea id="parentsPreferences" name="parentsPreferences" placeholder="Enter preferences"></textarea>
+
+                  <button type="button" onclick="addParents()">Add Intended Parents</button>
+                </form>
+              </div>
+
+              <div class="match-result">
+                <h3>Match Results</h3>
+                <div id="resultText"></div>
+              </div>
+            </div>
+          `;
+          break;
+        case 'pregnancy':
+          htmlContent = `
+            <div class="surrogacy-content">
+              <h2>Pregnancy</h2>
+              <p>Guidance and tips for a healthy pregnancy.</p>
+            </div>
+          `;
+          break;
+        case 'new-mothers':
+          htmlContent = `
+            <div class="surrogacy-content">
+              <h2>New Mothers & Domestic Help</h2>
+              <p>Support for new mothers and domestic help services.</p>
+            </div>
+          `;
+          break;
+        case 'beyond-surrogacy':
+          htmlContent = `
+            <div class="surrogacy-content">
+              <h2>Beyond Surrogacy</h2>
+              <div class="tabs">
+                <a href="#" onclick="loadPage('adoption')">Adoption</a>
+              </div>
+            </div>
+          `;
+          break;
+        case 'adoption':
+          htmlContent = `
+            <div class="surrogacy-content">
+              <h2>Adoption</h2>
+              <p>Information and support for adoption processes.</p>
+            </div>
+          `;
+          break;
+        case 'feminine-health':
+          htmlContent = `
+            <div class="surrogacy-content">
+              <h2>Feminine Health</h2>
+              <div class="tabs">
+                <a href="#" onclick="loadPage('menopause')">Menopause</a>
+                <a href="#" onclick="loadPage('emotional-support')">Emotional & Community Support</a>
+              </div>
+            </div>
+          `;
+          break;
+        case 'menopause':
+          htmlContent = `
+            <div class="surrogacy-content">
+              <h2>Menopause</h2>
+              <p>Support and resources for menopause.</p>
+            </div>
+          `;
+          break;
+        case 'emotional-support':
+          htmlContent = `
+            <div class="surrogacy-content">
+              <h2>Emotional & Community Support</h2>
+              <p>Counseling and community support for emotional well-being.</p>
+            </div>
+          `;
+          break;
+      }
+
+      contentDiv.innerHTML = htmlContent;
+    }
+
+    function calculateCost() {
+      const surrogateCompensation = parseFloat(document.getElementById('surrogateCompensation').value) || 0;
+      const ivfCosts = parseFloat(document.getElementById('ivfCosts').value) || 0;
+      const legalFees = parseFloat(document.getElementById('legalFees').value) || 0;
+      const insurance = parseFloat(document.getElementById('insurance').value) || 0;
+      const travel = parseFloat(document.getElementById('travel').value) || 0;
+
+      const totalCost = surrogateCompensation + ivfCosts + legalFees + insurance + travel;
+
+      document.getElementById('totalCost').textContent = `₹${totalCost.toLocaleString()}`;
+      document.getElementById('medicalCost').textContent = `₹${ivfCosts.toLocaleString()}`;
+      document.getElementById('compensationCost').textContent = `₹${surrogateCompensation.toLocaleString()}`;
+      document.getElementById('legalCost').textContent = `₹${legalFees.toLocaleString()}`;
+      document.getElementById('insuranceCost').textContent = `₹${insurance.toLocaleString()}`;
+      document.getElementById('travelCost').textContent = `₹${travel.toLocaleString()}`;
+    }
+
+    let surrogates = [];
+    let parents = [];
+
+    function addSurrogate() {
+      const name = document.getElementById('surrogateName').value;
+      const location = document.getElementById('surrogateLocation').value;
+      const age = document.getElementById('surrogateAge').value;
+      const children = document.getElementById('surrogateChildren').value;
+      const medicalHistory = document.getElementById('surrogateMedicalHistory').value;
+      const preferences = document.getElementById('surrogatePreferences').value;
+
+      surrogates.push({ name, location, age, children, medicalHistory, preferences });
+      alert('Surrogate added successfully!');
+      matchmaking();
+    }
+
+    function addParents() {
+      const name = document.getElementById('parentsName').value;
+      const location = document.getElementById('parentsLocation').value;
+      const ageRange = document.getElementById('parentsAgeRange').value;
+      const medicalHistory = document.getElementById('parentsMedicalHistory').value;
+      const preferences = document.getElementById('parentsPreferences').value;
+
+      parents.push({ name, location, ageRange, medicalHistory, preferences });
+      alert('Intended parents added successfully!');
+      matchmaking();
+    }
+
+    function matchmaking() {
+      const resultText = document.getElementById('resultText');
+      let matches = [];
+
+      for (let surrogate of surrogates) {
+        for (let parent of parents) {
+          let score = 0;
+
+          // Location Match
+          if (surrogate.location === parent.location) score += 30;
+
+          // Age Range Match
+          const [minAge, maxAge] = parent.ageRange.split('-').map(Number);
+          if (surrogate.age >= minAge && surrogate.age <= maxAge) score += 20;
+
+          // Preferences Match
+          if (surrogate.preferences === parent.preferences) score += 10;
+
+          // Medical History Match (Basic Check)
+          if (surrogate.medicalHistory.toLowerCase().includes("healthy") &&
+            parent.medicalHistory.toLowerCase().includes("healthy")) score += 20;
+
+          // Number of Children (Surrogate)
+          if (surrogate.children > 0) score += 10;
+
+          // Add to Matches if Score is High Enough
+          if (score >= 50) {
+            matches.push({
+              surrogate: surrogate.name,
+              parents: parent.name,
+              score: score
+            });
+          }
+        }
+      }
+
+      // Display Matches
+      if (matches.length > 0) {
+        resultText.innerHTML = matches
+          .sort((a, b) => b.score - a.score)
+          .map(match => `<div class="alert alert-success">Match: ${match.surrogate} (Surrogate) and ${match.parents} (Parents) - Score: ${match.score}</div>`)
+          .join('');
+      } else {
+        resultText.innerHTML = '<div class="alert alert-warning">No matches found yet.</div>';
+      }
+    }
+  </script>
 </body>
 
 </html>
